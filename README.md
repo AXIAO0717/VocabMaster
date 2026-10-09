@@ -43,3 +43,23 @@ VocabMaster/
 ├── cet6_words_2000.txt       # 内置六级词库
 ├── README.md                 # 项目说明
 └── screenshots/              # 截图目录（可自行添加）
+
+如何运行
+1. 安装依赖
+bash
+pip install -r requirements_vocab.txt
+requirements_vocab.txt 内容：
+
+text
+streamlit
+pandas
+plotly
+2. 启动应用
+bash
+streamlit run vocab_v6.py
+启动后，浏览器会自动打开本地地址（通常是 http://localhost:8501）。
+
+3. 导入词库
+项目自带 cet6_words_2000.txt，可以在「词库管理」页面导入。
+
+也支持自定义 txt 文件，格式为：单词,音标,词性,中文意思,例句,例句翻译。
